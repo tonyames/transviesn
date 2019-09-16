@@ -8,7 +8,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/assets/img/infirmier_vieux-min.jpg);
+  background-image: url("/assets/img/infirmier_vieux-min.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -74,7 +74,7 @@
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background-image: url(/assets/img/daughter-kissing-her-father.jpg);
+    background-image: url("/assets/img/daughter-kissing-her-father.jpg");
     background-size: cover;
     background-position: center;
     margin: auto;
@@ -289,12 +289,25 @@
   padding-bottom: 100px;
   background-color: #202020; }
   .footer-clean .widget-title {
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    border-left: 2px solid #00B36D;
+    padding-left: 8px; }
   .footer-clean .widget-text ul {
     list-style: none;
     padding: 0; }
     .footer-clean .widget-text ul li {
       color: #555; }
+      .footer-clean .widget-text ul li a {
+        color: white;
+        line-height: 40px;
+        text-decoration: none; }
+        .footer-clean .widget-text ul li a:hover {
+          color: #00B36D; }
+      .footer-clean .widget-text ul li i {
+        font-size: 10px;
+        margin: 10px; }
+        .footer-clean .widget-text ul li i:hover {
+          color: #00B36D; }
     .footer-clean .widget-text ul p {
       color: #555; }
 
@@ -316,6 +329,10 @@ h3 {
     h3 {
       margin-top: 10px;
       margin-bottom: 50px; } }
+
+section {
+  padding-top: 50px;
+  margin-bottom: 50px; }
 
 .nav-item {
   margin-left: 10px; }

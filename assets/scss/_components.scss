@@ -14,7 +14,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/assets/img/infirmier_vieux-min.jpg);
+    background-image: url("/assets/img/infirmier_vieux-min.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -103,7 +103,7 @@
         width: 300px;
         height: 300px;
         border-radius: 50%;
-        background-image: url(/assets/img/daughter-kissing-her-father.jpg);
+        background-image: url("/assets/img/daughter-kissing-her-father.jpg");
         background-size: cover;
         background-position: center;
         margin: auto;
@@ -404,14 +404,32 @@
 
   .widget-title{
     margin-bottom: 25px;
+    border-left: 2px solid $transvie-green;
+    padding-left: 8px;
   }
   .widget-text{
     ul {
       list-style: none;
       padding: 0;
 
+
       li {
-        color: #555;
+        color: #555; 
+        a {
+          color: white;
+          line-height: 40px;
+          text-decoration: none;
+          &:hover {
+             color: $transvie-green;
+          }
+        }
+        i {
+          font-size: 10px;
+          margin: 10px;
+          &:hover {
+             color: $transvie-green;
+          }
+        }
       }
       p {
         color: #555;

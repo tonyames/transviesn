@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Roboto:300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon" />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/vendors/slick-1.8.0/slick.css">
+    <link rel="stylesheet" type="text/css" href="./assets/vendors/slick-1.8.0/slick-theme.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/testimonials.css">
     <link rel="stylesheet" href="assets/fontawesome-free/css/all.css">
@@ -20,8 +22,8 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Accueil</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Nos Offres &amp; Services</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#offers">Nos Offres &amp; Services</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <ul class="nav navbar-nav mx-auto navbar-collapse collapse">
@@ -34,7 +36,7 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav align-items-center">
                         <li class="nav-item" role="presentation"><a class="nav-link" href="#">Transvie</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Notre Réseau</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#partners">Notre Réseau</a></li>
                         <li class="nav-item dropdown">
                             <a class="dropdown-toggle active" data-toggle="dropdown" aria-expanded="false" href="#">Espace Client</a>
                             <div class="dropdown-menu" role="menu">
@@ -61,10 +63,10 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navcol-1">
                     <ul class="nav navbar-nav align-items-center justify-content-start">
                         <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Accueil</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Nos Offres &amp; Services</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#offers">Nos Offres &amp; Services</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="#">Transvie</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Notre Réseau</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#partners">Notre Réseau</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#contact">Contact</a></li>
                         <li class="nav-item dropdown">
                             <a class="dropdown-toggle active" data-toggle="dropdown" aria-expanded="false" href="#">Espace Particulier</a>
                             <div class="dropdown-menu" role="menu">
@@ -150,7 +152,7 @@
             </div>
         </div>
     </section>
-    <section class="pricing py-5">
+    <section id="offers" class="pricing py-5">
         <div class="container">
             <div>
                 <h2 class="text-center section-title">Des offres adaptées à chaque besoin</h2>
@@ -342,6 +344,45 @@
             </div>
         </div>
     </section>
+    <section id="partners" class=" text-dark">
+        <div class="container text-center">
+            <h2 class=" section-title">Notre Réseau</h2>
+            <div class="row mb-5 mt-5">
+                <div class="col m-auto">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="slider multiple-items">
+                        <div>
+                            <img class="partner-logo" src="./assets/img/partners/AFTU-min.png" alt="AFTU logo">
+                        </div>
+                        <div>
+                            <img class="img-fluid partner-logo" src="./assets/img/partners/EDK-OIL-min.png"
+                                alt="EDK-OIL">
+                        </div>
+                        <div>
+                            <img class="img-fluid partner-logo" src="./assets/img/partners/LOGOCETUD-min.jpg"
+                                alt="LOGOCETUD">
+                        </div>
+                        <div>
+                            <img class="img-fluid partner-logo" src="./assets/img/partners/Logomercerparis-min.png" alt="Logomercerparis logo">
+                        </div>
+                        <div>
+                            <img class="img-fluid partner-logo" src="./assets/img/partners/logomutuellefrancebleue-min.png" alt="logomutuellefrancebleue logo">
+                        </div>
+                        <div>
+                            <img class="img-fluid partner-logo" src="./assets/img/partners/LogoUnacois-min.jpg" alt="unacois logo">
+                        </div>
+                        <div>
+                            <img class="img-fluid partner-logo" src="./assets/img/partners/LogoVivoEnergy-min.png"
+                                alt="VivoEnergy Logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="testimonials-clean container-fluid">
         <div class="intro">
             <h2 class="text-center">Témoignages</h2>
@@ -415,8 +456,8 @@
                             </div>
                         </div>
                         <div class="row mt-4">
-                            <div class="col">
-                                <button type="submit" class="btn btn-primary">Envoyer</button>
+                            <div class="col ">
+                                <button type="submit" class="btn btn-primary ">Envoyer</button>
                             </div>
                         </div>
                     </form>
@@ -435,8 +476,8 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="footer-clean text-white">
+    <footer class="bg-dark">
+        <div class="footer-clean text-white ">
             <div class="container">
                 <div class="row">
                     <div class="col-6 col-md-4 ">
@@ -498,7 +539,7 @@
                             <label for="newsletter">Abonnez-vous à notre bulletin et recevez des nouvelles de nos réductions</label>
                             <div class="form-group justify-content-end d-flex align-items-center">
                                 <input class="form-control" name="newsletter" type="email" placeholder="Entrez votre adresse mail">
-                                <button class="btn btn-primary my-2">Souscrire</button>
+                                <button class="btn btn-primary my-2 ml-2">Souscrire</button>
                             </div>
                             
                         </div>
@@ -515,16 +556,26 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col text-center">
-                    
+                <div class="col text-center text-white">
                     <p class="copyright"><br>© 2019 Design by Tony Ames<br></p>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/vendors/slick-1.8.0/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script type="text/javascript">
+
+        $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            autoplay: true,
+            arrows: false,
+        });  
+    </script>
 </body>
 
 </html>
