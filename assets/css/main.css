@@ -1,0 +1,341 @@
+#logo img {
+  height: 50px; }
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/img/infirmier_vieux-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(90%); }
+  @media only screen and (min-width: 320px) and (max-width: 520px) {
+    #hero::before {
+      background-size: cover;
+      background-repeat: no-repeat;
+      filter: brightness(60%); } }
+
+#hero {
+  height: 80vh;
+  position: relative;
+  display: flex; }
+  #hero .hero-content {
+    width: 400px;
+    position: relative;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px; }
+  @media only screen and (min-width: 320px) and (max-width: 520px) {
+    #hero {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: -490px; }
+      #hero #hero {
+        height: 80vh; }
+      #hero .hero-content {
+        width: 100%;
+        position: relative;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: white;
+        margin-left: 0px; }
+      #hero .hero-slogan {
+        margin-bottom: 10px; }
+      #hero .hero-button {
+        margin-top: 10px;
+        margin-bottom: 10px; } }
+  @media screen and (orientation: landscape) {
+    #hero .hero-content {
+      margin-left: 25px; } }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    #hero {
+      height: 100vh; }
+      #hero .hero-content {
+        width: 50%;
+        top: 100px;
+        margin-left: 25px;
+        justify-content: start; } }
+
+#shapes-section {
+  overflow: hidden; }
+
+.shape-wrapper {
+  display: flex;
+  position: relative; }
+  .shape-wrapper .round-shape-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url(/assets/img/daughter-kissing-her-father.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    z-index: 5; }
+    @media screen and (min-width: 320px) and (max-width: 520px) {
+      .shape-wrapper .round-shape-img {
+        width: 200px;
+        height: 200px; } }
+  .shape-wrapper .round-shape-150-blue {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #0170b4;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 80px;
+    bottom: 100px;
+    z-index: 3; }
+    @media screen and (min-width: 320px) and (max-width: 520px) {
+      .shape-wrapper .round-shape-150-blue {
+        width: 100px;
+        height: 100px;
+        left: 20px;
+        bottom: 120px; } }
+  .shape-wrapper .round-shape-200-green {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #00B36D;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: -50px;
+    left: 80px;
+    z-index: 4; }
+
+#shapes-with-two-img .round-shape-img:nth-of-type(2n+1) {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  left: 5%;
+  z-index: 6; }
+
+#shapes-with-two-img .round-shape-img:nth-of-type(2n) {
+  width: 180px;
+  height: 180px;
+  z-index: 6;
+  position: relative; }
+
+@media screen and (min-width: 320px) and (max-width: 520px) {
+  #shapes-with-two-img .round-shape-150-blue {
+    left: 65%; } }
+
+.pricing .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1); }
+
+.card {
+  color: white; }
+
+.pricing hr {
+  margin: 1.5rem 0; }
+
+.pricing .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold; }
+
+.pricing .card-price {
+  font-size: 3rem;
+  margin: 0; }
+
+.pricing .card-price .period {
+  font-size: 0.8rem; }
+
+.pricing ul {
+  padding: 2px;
+  list-style: none; }
+
+.pricing ul li {
+  margin-bottom: 1rem;
+  font-size: 0.85rem; }
+
+.pricing .text-muted {
+  opacity: 0.7; }
+
+.pricing .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s; }
+
+/* Hover Effects on Card */
+@media (min-width: 992px) {
+  .pricing .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3); }
+  .pricing .card:hover .btn {
+    opacity: 1; } }
+
+.transvie-packs-list a {
+  text-decoration: none !important; }
+
+.transvie-10-years-title {
+  display: inline-flex;
+  align-items: center; }
+
+.transvie-10-years {
+  margin-top: 50px;
+  margin-bottom: 25px; }
+
+.transvie-10-years span:nth-child(n+1) {
+  font-size: 80px;
+  padding-right: 35px;
+  /* padding-right: 35px; */
+  line-height: 10px;
+  color: #0e75b9; }
+
+.transvie-10-years span:nth-child(n+2) {
+  font-size: 45px;
+  /* padding-right: 35px; */
+  line-height: 40px;
+  color: #0e75b9; }
+
+.transvie-summary-wrapper {
+  width: 450px;
+  height: 450px;
+  background-color: #0e75b9;
+  background-position: center;
+  border-radius: 50%;
+  margin: auto;
+  display: flex; }
+
+.transvie-summary-illustration {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style: none;
+  width: 420px;
+  margin: auto;
+  padding-left: 18px; }
+
+.transvie-summary-illustration li {
+  width: 190px;
+  height: auto;
+  padding: 18px; }
+
+.transvie-summary-numbers {
+  color: #fff;
+  font-size: 2.5em; }
+
+.transvie-summary-text {
+  color: #ffffff; }
+
+.transvie-summary-illustration li:nth-child(2) {
+  width: 170px;
+  height: auto;
+  background-color: #00B36D;
+  border-radius: 50%;
+  position: relative;
+  left: 60px;
+  top: -40px; }
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .transvie-10-years-title {
+    display: block;
+    transform: scale(0.6); }
+  .transvie-packs-list {
+    overflow: hidden;
+    overflow-x: scroll; }
+  .transvie-packs-item {
+    box-shadow: 0 0.125rem 0.425rem rgba(0, 0, 0, 0.25) !important; }
+  .transvie-summary-wrapper {
+    width: auto;
+    height: auto;
+    margin-top: 25px;
+    background-color: #0e75b9;
+    background-position: center;
+    border-radius: 25px;
+    margin: auto;
+    display: flex; }
+  .transvie-summary-illustration {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    margin: auto;
+    justify-content: center;
+    padding: 0px; }
+  .transvie-summary-illustration li:nth-child(2) {
+    height: auto;
+    background-color: #00B36D;
+    border-radius: 25px;
+    /*position: relative;*/
+    left: 0px;
+    top: 0px; }
+  .transvie-summary-illustration li {
+    padding: 10px; } }
+
+.footer-clean {
+  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #202020; }
+  .footer-clean .widget-title {
+    margin-bottom: 25px; }
+  .footer-clean .widget-text ul {
+    list-style: none;
+    padding: 0; }
+    .footer-clean .widget-text ul li {
+      color: #555; }
+    .footer-clean .widget-text ul p {
+      color: #555; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 200; }
+  @media screen and (min-width: 320px) and (max-width: 520px) {
+    h3 {
+      font-size: 1.25rem;
+      padding: 15px;
+      margin: 15px; } }
+  @media screen and (orientation: landscape) {
+    h3 {
+      margin-top: 10px;
+      margin-bottom: 50px; } }
+
+.nav-item {
+  margin-left: 10px; }
+
+.hero-title {
+  font-size: 2.5rem; }
+
+.section-title {
+  padding: 100px; }
+  @media screen and (min-width: width 767px) {
+    .section-title {
+      padding: 50px; } }
+  @media screen and (min-width: 320px) and (max-width: 520px) {
+    .section-title {
+      font-size: 1.6rem;
+      padding: 15px;
+      margin: 15px; } }
+  @media screen and (orientation: landscape) {
+    .section-title {
+      padding: 0px;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      font-size: 1.7em; } }

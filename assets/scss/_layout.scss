@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  @media screen and (min-width:320px) and (max-width: 520px) {
+        font-size: 1.25rem;
+        padding: 15px;
+        margin: 15px;
+    }
+  @media screen and (orientation:landscape) {
+    margin-top: 10px;
+    margin-bottom: 50px
+  
+    }
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+.hero-title {
+    font-size: 2.5rem
+}
+
+
+.section-title {
+    padding: 100px;
+    @media screen and (min-width: width 767px) {
+      padding: 50px;
+    }
+    @media screen and (min-width:320px) and (max-width: 520px) {
+        font-size: 1.6rem;
+        padding: 15px;
+        margin: 15px;
+    }
+    @media screen and (orientation:landscape)  {
+     
+      padding: 0px;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      font-size: 1.7em;
+      
+    }
+}

@@ -1,0 +1,6 @@
+# www.robotstxt.org/
+
+# Allow crawling of all content
+User-agent: *
+Disallow:
+Sitemap: https://www.transvie-diaspora.com/sitemap.xml
