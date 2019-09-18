@@ -242,6 +242,11 @@
   opacity: 0.7;
   transition: all 0.2s;
 }
+ .pricing a{
+   background-color: white;
+    color: black;
+    border-color: white;
+ }
 
 /* Hover Effects on Card */
 
@@ -390,6 +395,13 @@
 	.transvie-summary-illustration li {
 		padding: 10px;
 	}
+}
+// vmo section 
+
+#vmo {
+  h4 {
+    color: $transvie-green;
+  }
 }
 
 // Footer 
