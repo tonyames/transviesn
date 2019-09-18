@@ -291,6 +291,46 @@
 #vmo h4 {
   color: #00B36D; }
 
+#vmo::before {
+  content: url("../img/heading-decoration.png");
+  height: 50px;
+  width: 130px;
+  position: relative;
+  left: -200px;
+  top: 50px;
+  display: block;
+  transform: scale(0.7); }
+
+#vmo::after {
+  content: url("../img/heading-decoration.png");
+  height: 50px;
+  width: 130px;
+  position: relative;
+  left: 98%;
+  top: -235px;
+  display: block;
+  transform: scale(0.7); }
+
+@media (min-width: 320px) and (max-width: 576px) {
+  #vmo::before {
+    content: url(../img/heading-decoration.png);
+    height: 50px;
+    width: 130px;
+    position: relative;
+    left: -110px;
+    top: -60px;
+    display: block;
+    transform: scale(0.7); } }
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  #vmo::after {
+    top: -270px; } }
+
+@media (min-width: 1024px) {
+  #vmo #vmo::after {
+    top: -200px;
+    left: 100%; } }
+
 .footer-clean {
   margin-top: 100px;
   padding-top: 100px;
@@ -322,8 +362,14 @@
 * {
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: 'Roboto', sans-serif; }
+
+main {
+  overflow: hidden; }
 
 h3 {
   font-size: 1.5rem;

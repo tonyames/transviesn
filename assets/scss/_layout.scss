@@ -1,8 +1,15 @@
 * {
     box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+main{
+	overflow: hidden;	
 }
 
 h3 {
@@ -16,7 +23,6 @@ h3 {
   @media screen and (orientation:landscape) {
     margin-top: 10px;
     margin-bottom: 50px
-  
     }
 }
 section {

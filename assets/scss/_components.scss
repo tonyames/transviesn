@@ -402,7 +402,52 @@
   h4 {
     color: $transvie-green;
   }
+  &::before {
+	content: url('../img/heading-decoration.png');
+	height: 50px;
+	width: 130px;
+	position: relative;
+	left: -200px;
+	top: 50px;
+	display: block;
+	transform: scale(.7);
+  }
+  &::after {
+	content: url('../img/heading-decoration.png');
+	height: 50px;
+	width: 130px;
+	position: relative;
+	left: 98%;
+	top: -235px;
+	display: block;
+	transform: scale(.7);
+}  
+
+  @media (min-width:320px ) and (max-width: 576px) {
+    &::before {
+	    content: url(../img/heading-decoration.png);
+	    height: 50px;
+	    width: 130px;
+	    position: relative;
+	    left: -110px;
+	    top: -60px;
+	    display: block;
+	    transform: scale(.7);
+	  }
+  }
+  @media (min-width:767px ) and (max-width:1024px) {
+    	&::after {
+		top: -270px;
+	  }
+  }
+  @media   (min-width:1024px) {
+    #vmo::after {
+      top: -200px;
+      left: 100%;
+    }
+  }
 }
+
 
 // Footer 
 
