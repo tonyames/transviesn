@@ -3,4 +3,4 @@
 # Allow crawling of all content
 User-agent: *
 Disallow:
-Sitemap: https://www.transvie-diaspora.com/sitemap.xml
+Sitemap: https://www.transvie.sn/sitemap.xml
